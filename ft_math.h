@@ -1,7 +1,6 @@
 #ifndef FT_MATH_H
 # define FT_MATH_H
 # include <stdlib.h>
-# include "player.h"
 # include "point.h"
 # include <math.h>
 # define PI 3.1415926535
