@@ -6,7 +6,7 @@
 #    By: samusanc <samusanc@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/05 01:22:18 by samusanc          #+#    #+#              #
-#    Updated: 2024/08/08 21:25:00 by samusanc         ###   ########.fr        #
+#    Updated: 2024/08/09 16:39:36 by samusanc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,7 +69,7 @@ submodules: .submodule-init #.libft
 
 add: fclean .submodule-init
 #	@make -sC ./libft/ add
-	@git pull
+	@-git pull
 	@git add .
 
 #===================================================================================================================
