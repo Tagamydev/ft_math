@@ -6,7 +6,7 @@
 #    By: samusanc <samusanc@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/05 01:22:18 by samusanc          #+#    #+#              #
-#    Updated: 2024/08/10 22:10:15 by samusanc         ###   ########.fr        #
+#    Updated: 2024/08/10 22:14:03 by samusanc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,10 +69,15 @@ add: fclean .submodule-init
 	@git add .
 
 commit: add
+	@echo "" >> .TODO
 	@cp .TODO .TODO.tmp
 	sed -i '1s/^/$(COMMIT_D) by $(COMMIT_U)\n/' .TODO.tmp
+	echo "======================= end of git description" >> .TODO.tmp
 	git commit -F .TODO.tmp 
 	@rm -rf .TODO.tmp
+
+push: commit
+	git push
 
 # MANDATORY
 
