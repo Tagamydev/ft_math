@@ -6,7 +6,7 @@
 #    By: samusanc <samusanc@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/05 01:22:18 by samusanc          #+#    #+#              #
-#    Updated: 2024/08/09 18:04:53 by samusanc         ###   ########.fr        #
+#    Updated: 2024/08/10 22:10:15 by samusanc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,9 +47,7 @@ title:
 	@echo "Github: https://github.com/Tagamydev/ft_math"
 	@echo ""
 
-#===================================================================================================================
-#												Git Submodule Workflow
-#===================================================================================================================
+# SUBMODULES
 
 submodules: .submodule-init #.libft
 	@echo "All submodules loaded..."
@@ -63,17 +61,20 @@ submodules: .submodule-init #.libft
 #	@make -sC ./libft/ all
 #	@touch .libft
 
-#===================================================================================================================
-#									Git Submodule Workflow 4 ADD COMMIT and PUSH
-#===================================================================================================================
+# GIT RULES
 
 add: fclean .submodule-init
 #	@make -sC ./libft/ add
 	@-git pull
 	@git add .
 
-#===================================================================================================================
-#===================================================================================================================
+commit: add
+	@cp .TODO .TODO.tmp
+	sed -i '1s/^/$(COMMIT_D) by $(COMMIT_U)\n/' .TODO.tmp
+	git commit -F .TODO.tmp 
+	@rm -rf .TODO.tmp
+
+# MANDATORY
 
 .mandatory: $(OBJS)
 	ar rcs $(NAME) $(OBJS) 
@@ -100,4 +101,4 @@ clean: .clean
 	@rm -rf $(O_DIR)
 	@touch .clean
 
-.PHONY: all title clean fclean re submodules add 
+.PHONY: all title clean fclean re submodules add commit
