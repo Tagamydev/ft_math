@@ -19,6 +19,7 @@ CC			= gcc $(CFLAGS)
 
 SRCS		= \
 		./deg2Rad.c \
+		./ft_abs.c \
 		./fx_angle.c \
 		./fx_sin.c \
 		./fx_cos.c 
