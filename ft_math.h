@@ -4,6 +4,8 @@
 # include <math.h>
 # define PI 3.1415926535
 # define DR 0.0174533
+# include <limits.h>
+# include <float.h>
 
 float	deg2Rad();
 
