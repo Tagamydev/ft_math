@@ -22,6 +22,7 @@ SRCS		= \
 		./ft_abs.c \
 		./fx_angle.c \
 		./fx_sin.c \
+		./Q_rsqrt.c \
 		./fx_cos.c 
 
 O_DIR		= ./objects/
