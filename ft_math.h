@@ -12,6 +12,6 @@ float	fx_sin(float angle);
 
 float	fx_angle(float angle);
 
-long double	ft_abs(long double a, long double b);
+long double	ft_abs(long double n);
 
 #endif

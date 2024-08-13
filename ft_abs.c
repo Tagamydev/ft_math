@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-long double	ft_abs(long double a, long double b)
+long double	ft_abs(long double n)
 {
-	if (a > b)
-		return (a);
-	return (b);
+	if (n < 0)
+		return (-n);
+	return (n);
 }
