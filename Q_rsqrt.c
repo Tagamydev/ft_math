@@ -21,7 +21,7 @@ float	Q_rsqrt(float number)
 
 	x2 = number * 0.5F;
 	y = number;
-	i = *(long *)&y;
+	i = *(long *)&number;
 	i = 0x5f3759df - (i >> 1);
 	y = *(float *)&i;
 	y = y * (threehalfs - (x2 * y * y));

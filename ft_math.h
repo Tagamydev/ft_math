@@ -6,6 +6,7 @@
 # define DR 0.0174533
 # include <limits.h>
 # include <float.h>
+# include "Q_rsqrt.h"
 
 float	deg2Rad();
 
