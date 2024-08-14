@@ -6,7 +6,7 @@
 /*   By: samusanc <samusanc@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 15:23:14 by samusanc          #+#    #+#             */
-/*   Updated: 2024/08/14 15:33:57 by samusanc         ###   ########.fr       */
+/*   Updated: 2024/08/14 15:35:19 by samusanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 # include <math.h>
 # include <limits.h>
-# include "Q_sqrt.h"
+# include "Q_rsqrt.h"
 
 float	deg2Rad();
 
