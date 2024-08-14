@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   point.h                                            :+:      :+:    :+:   */
+/*   Q_rsqrt.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: samusanc <samusanc@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/09 17:10:36 by samusanc          #+#    #+#             */
-/*   Updated: 2024/08/09 17:11:29 by samusanc         ###   ########.fr       */
+/*   Updated: 2024/08/14 15:22:53 by samusanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef Q_RSQRT_H
 # define Q_RSQRT_H
 
-float	Q_rsqrt(float number);
+float	q_rsqrt(float number);
 
 #endif
